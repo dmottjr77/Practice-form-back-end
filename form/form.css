@@ -1,0 +1,40 @@
+:root{
+ --purple:#5b2d8b;
+ --gold:#d4af37;
+}
+body{
+ background:transparent;
+ font-family: 'Cinzel', serif;
+}
+.glass-card{
+ max-width:480px;
+ margin:0 auto;
+ padding:24px;
+ border-radius:18px;
+ background:rgba(91,45,139,.25);
+ backdrop-filter: blur(14px);
+ border:1px solid rgba(212,175,55,.45);
+ box-shadow:0 0 30px rgba(0,0,0,.25);
+ color:#fff;
+}
+h2{text-align:center;color:var(--gold);}
+input,textarea{
+ width:100%;
+ padding:12px;
+ margin-bottom:12px;
+ border-radius:10px;
+ border:1px solid var(--gold);
+ background:rgba(0,0,0,.25);
+ color:#fff;
+}
+button{
+ width:100%;
+ padding:14px;
+ border:none;
+ border-radius:12px;
+ background:linear-gradient(135deg,var(--gold),#f5e28b);
+ color:#2b1a4a;
+ font-weight:700;
+ cursor:pointer;
+}
+button:hover{opacity:.9}

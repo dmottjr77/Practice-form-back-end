@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ministry Contact Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="form.css">
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+<div class="glass-card">
+  <h2>Send Us a Message</h2>
+  <form id="contactForm" method="POST" action="send.php">
+    <input type="text" name="name" placeholder="Your Name" required minlength="2">
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required minlength="10"></textarea>
+    <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+    <button type="submit">Send Message</button>
+  </form>
+  <p id="status"></p>
+</div>
+<script src="validate.js"></script>
+</body>
+</html>
