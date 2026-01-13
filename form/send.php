@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] !== "POST") { http_response_code(403); exit; }
 
-$secret = "YOUR_SECRET_KEY";
+$secret = "6LdkQ0ksAAAAAFlK6YBIp7ZB7y-pnBJmzTGd_ryI";
 $response = $_POST['g-recaptcha-response'];
 $verify = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$response");
 $captcha_success = json_decode($verify);
